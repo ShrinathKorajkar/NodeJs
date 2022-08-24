@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    h1= message
+    form(action='/' method='post')
+        input(type='text' name='name' class='name' placeholder='name')
+        input(type='number' name='age' class='age' placeholder='age')
+        button(type='submit') submit
